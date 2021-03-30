@@ -9,7 +9,16 @@ const test = async () => {
     // await categories.remove(6)
     // const cats = await categories.findAll()
     // console.log(cats)
-    
+    // await products.addImage(6, ['new image', 'url image'])
+    // const prods = await products.findAllByCategory(3)
+    // const prods = await products.findAllPaginated({ currentPage: 0, pageSize: 2})
+    // console.log(prods)
+    // await products.updateCategories(5, [3,4,5])
+    // for (let i = 0; i < 1000; i++) {
+    //   products.findAllPaginated().then(prods => console.log(prods))
+    // }
+
+
   } catch (err) {
     console.log(err)
   }

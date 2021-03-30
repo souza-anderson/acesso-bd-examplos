@@ -9,7 +9,7 @@ const init = database => {
 
   const addImage = async (productId, data) => {
     const dbConn = await db.init(database)
-    await db.queryWithParams(dbConn, 'INSERT INTO images (id,description, url, product_id) VALUES (?,?,?,?);', [...data, productId])
+    await db.queryWithParams(dbConn, 'INSERT INTO images (description, url, product_id) VALUES (?,?,?);', [...data, productId])
   }
 
   const findAll = async () => {
